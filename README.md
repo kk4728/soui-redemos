@@ -1,7 +1,7 @@
 @ soui-redemos
 
 uires/   
-    为所有工程的资源路径  
+>为所有工程的资源路径  
 plan.txt  
     包含参考MFC/.NET框架的基础控件整理计划  
     注意ActiveX控件一定要考虑如何在soui应用，便于后期的视觉开发  

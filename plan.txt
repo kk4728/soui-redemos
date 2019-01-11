@@ -1,0 +1,13 @@
+buttons
+    button
+    radio-box
+    check-box
+    on-off box(PC managerd.exe)
+
+static
+    label
+    superlink
+
+edit
+    
+

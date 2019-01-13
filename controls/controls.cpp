@@ -17,6 +17,7 @@
 #define SYS_NAMED_RESOURCE _T("soui-sys-resource.dll")
 #endif
 
+
 int APIENTRY _tWinMain(HINSTANCE hInstance,
                      HINSTANCE hPrevInstance,
                      LPTSTR    lpCmdLine,

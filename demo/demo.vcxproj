@@ -81,17 +81,22 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="demo.h" />
+    <ClInclude Include="MainDlg.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="ThreadObject.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="D:\SoftSDK\soui\controls.extend\gif\SSkinGif.cpp" />
     <ClCompile Include="demo.cpp" />
+    <ClCompile Include="MainDlg.cpp" />
+    <ClCompile Include="skin\SSkinLoader.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="ThreadObject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="demo.rc" />

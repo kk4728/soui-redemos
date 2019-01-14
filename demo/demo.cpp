@@ -7,6 +7,12 @@
 #include <com-loader.hpp>
 #include <commgr2.h>
 #include <gif/SSkinGif.h>
+#include <helper/MenuWndHook.h>
+#include <event/NotifyCenter.h>
+#include <TipWnd.h>
+
+#include "skin/SSkinLoader.h"
+#include "MainDlg.h"
 
 #ifdef _DEBUG
 #define SYS_NAMED_RESOURCE _T("soui-sys-resourced.dll")
@@ -141,6 +147,38 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 	//皮肤加载器
 	SSkinLoader *SkinLoader = new SSkinLoader(theApp);
 	SkinLoader->LoadSkin(_T("themes\\skin1"));
+
+
+	//加载系统资源
+	HMODULE hSysResource=LoadLibrary(SYS_NAMED_RESOURCE);
+	if(hSysResource)
+	{
+		CAutoRefPtr<IResProvider> sysSesProvider;
+		CreateResProvider(RES_PE,(IObjRef**)&sysSesProvider);
+		sysSesProvider->Init((WPARAM)hSysResource,0);
+		theApp->LoadSystemNamedResource(sysSesProvider);
+	}
+	//采用hook绘制菜单的边框
+	CMenuWndHook::InstallHook(hInstance,L"_skin.sys.menu.border");
+
+	SNotifyCenter *pNotifyCenter = new SNotifyCenter;
+	{
+		//设置提示窗口布局
+		CTipWnd::SetLayout(_T("layout:dlg_tip"));
+
+		//创建并显示使用SOUI布局应用程序窗口,为了保存窗口对象的析构先于其它对象，把它们缩进一层。
+		CMainDlg dlgMain;  
+		dlgMain.Create(GetActiveWindow(), 0,0,888,650);
+
+		dlgMain.GetNative()->SendMessage(WM_INITDIALOG);
+		dlgMain.CenterWindow();
+		dlgMain.ShowWindow(SW_SHOWNORMAL);
+
+		SmileyCreateHook  smileyHook; //不知道MainDlg里哪块和mhook冲突了，在win10中，如果hook放到dlgmain.create前会导致hook失败。
+		nRet=theApp->Run(dlgMain.m_hWnd);
+	}
+	if(pNotifyCenter) delete pNotifyCenter;
+
 }
 exit:
 	{

@@ -1,0 +1,26 @@
+﻿<SOUI name="mainWindow" title="@string/title" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16" width="600" height="400"  margin="5,5,5,5"  resizable="1" wndType="appMain"
+toolWindow="1"
+translucent="1" 
+>
+  <root skin="_skin.sys.wnd.bkgnd" cache="1">
+    <caption pos="0,0,-0,30" show="1" font="adding:0">
+      <icon pos="10,8" src="ICON_LOGO:16"/>
+      <text pos="29,9">@string/title</text>
+      <imgbtn name="btn_close" skin="_skin.sys.btn.close"    pos="-45,0" tip="close" animate="1"/>
+      <imgbtn name="btn_max" skin="_skin.sys.btn.maximize"  pos="-83,0" animate="1" />
+      <imgbtn name="btn_restore" skin="_skin.sys.btn.restore"  pos="-83,0" show="0" animate="1" />
+      <imgbtn name="btn_min" skin="_skin.sys.btn.minimize" pos="-121,0" animate="1" />
+    </caption>
+    <window pos="5,[5,-5,-5" layout="vbox" colorBkgnd="#cccccc">
+      <!--text pos="|0,|0" offset="-0.5,-0.5">这是一个由SOUI向导生成的APP框架</text-->
+      <!--img skin="img_test" pos="0,0" offset="-0.5,-0.5" /-->
+      <!--线性布局的自适应子窗口大小-->
+      <text>vbox + gravity + wrapContent</text>
+      <window size="100,30" colorBkgnd="#ff0000" />
+      <window size="200,0" extend="10,5,10,5" colorBkgnd="#ff0000" weight="4" />
+      <window size="120,0" layout_gravity="right" colorBkgnd="#ff0000" weight="1" />
+      <button size="100,30" extend_top="10">button test</button>
+    </window>
+<shellnotifyicon id="110" menu="SMENU:menu_tray" ico="ICON_LOGO:16" tip="110"/>
+  </root>
+</SOUI>

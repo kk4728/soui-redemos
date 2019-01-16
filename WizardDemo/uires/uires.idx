@@ -1,0 +1,28 @@
+﻿<resource>
+  <UIDEF>
+    <file name="XML_INIT" path="uidef\init.xml"/>
+  </UIDEF>
+  <LAYOUT>
+    <file name="XML_MAINWND" path="xml\dlg_main.xml"/>
+  </LAYOUT>
+
+  <IMG>
+    <file name="traymenu_icons" path="image\traymenu_icons.png"/>
+    <file name="pic_test" path="image\test.png" />
+  </IMG>
+  
+  <values>
+  	<file name="string" path="values\string.xml"/>
+  	<file name="color" path="values\color.xml"/>
+  	<file name="skin" path="values\skin.xml"/>
+  </values>
+
+
+
+  <ICON>
+    <file name="ICON_LOGO"  path="image\soui.ico"/>
+  </ICON>
+  <SMENU>
+    <file name="menu_tray" path="xml\menu_tray.xml"/>
+  </SMENU>
+</resource>

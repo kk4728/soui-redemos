@@ -102,7 +102,9 @@
     <None Include="uires\values\color.xml" />
     <None Include="uires\values\skin.xml" />
     <None Include="uires\values\string.xml" />
-    <None Include="uires\xml\dlg_main.xml" />
+    <None Include="uires\xml\dlg_main.xml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="uires\xml\menu_tray.xml" />
   </ItemGroup>
   <ItemGroup>

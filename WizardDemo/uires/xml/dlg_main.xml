@@ -37,7 +37,13 @@ translucent="1"
         <button size="100,20" extend_left="10">button3</button>
         <button size="100,20" extend_left="10">button4</button>
       </window>
+
+      <window pos="5,10,-5,-5" layout="vbox" gravity="center">
+        <myCtrl size="100,40" colorBkgnd="#ff0000" />
+      </window>
     </window>
+    
+    
     
     
 <shellnotifyicon id="110" menu="SMENU:menu_tray" ico="ICON_LOGO:16" tip="110"/>

@@ -26,20 +26,20 @@ translucent="1"
     
     <!--hbox test-->
     <window pos="5,[5, -5,@120" layout="vbox" colorBkgnd="#dddddd">
-      <group size="-1,-1" >      
-        <text size="-1, 20"> --> hbox</text>
-        <button size="@100,@10"></button>
+      <group pos="3, 5, -1, 50" colorBkgnd="#fff412">      
+        <text size="100, 20" extend_right="500"> --> hbox</text>
+        <button size="100,20">btn-test</button>
       </group>
 
-      <window pos="-1,-1" layout="hbox">
+      <window pos="5,[5,-1,200" layout="hbox" colorBkgnd="#888888">
         <button size="100,20" >button1</button>
         <button size="100,20" extend_left="10">button2</button>
         <button size="100,20" extend_left="10">button3</button>
         <button size="100,20" extend_left="10">button4</button>
       </window>
 
-      <window pos="5,10,-5,-5" layout="vbox" gravity="center">
-        <myCtrl size="100,40" colorBkgnd="#ff0000" />
+      <window pos="5,[10,-5,-5" colorBkgnd="#151515" layout="vbox" gravity="center" extend_bottom="30">
+        <myCtrl pos="1,1,@100,@50" colorBkgnd="#fefefe" focusable="1"/>
       </window>
     </window>
     

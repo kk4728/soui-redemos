@@ -1,4 +1,4 @@
-﻿<SOUI name="mainWindow" title="@string/title" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16" width="600" height="400"  margin="5,5,5,5"  resizable="1" wndType="appMain"
+﻿<SOUI name="mainWindow" title="@string/title" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16" width="600" height="450"  margin="5,5,5,5"  resizable="1" wndType="appMain"
 toolWindow="1"
 translucent="1" 
 >
@@ -23,9 +23,9 @@ translucent="1"
       <window size="120,0" layout_gravity="left" colorBkgnd="#ff0000" weight="1" />
       <button size="100,0" extend_top="10" weight="1" >button test</button>
     </window>
-    
+     
     <!--hbox test-->
-    <window pos="5,[5, -5,@120" layout="vbox" colorBkgnd="#dddddd">
+    <window pos="5,[5, -5,@220" layout="vbox" colorBkgnd="#dddddd">
       <group pos="3, 5, -1, 50" colorBkgnd="#fff412">      
         <text size="100, 20" extend_right="500"> --> hbox</text>
         <button size="100,20">btn-test</button>
@@ -39,10 +39,13 @@ translucent="1"
       </window>
 
       <window pos="5,[10,-5,-5" colorBkgnd="#151515" layout="vbox" gravity="center" extend_bottom="30">
-        <myCtrl pos="1,1,@100,@50" colorBkgnd="#fefefe" focusable="1"/>
+        <myCtrl size="500, 150" colorBkgnd="#fefefe" focusable="1"/>
       </window>
     </window>
-    
+
+    <window pos="5,[5, -5, -5" colorBkgnd="#cdcdcd" >
+      <edit2 size="-2,30dpi" name="edit_test" margin="2,2,2,2" colorBorder="#ff0000" ncSkin="" handleEnter="1"/>
+    </window>
     
     
     

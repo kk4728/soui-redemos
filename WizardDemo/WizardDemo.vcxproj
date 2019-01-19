@@ -109,6 +109,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainDlg.cpp" />
+    <ClCompile Include="SEdit2.cpp" />
     <ClCompile Include="SMyCtrl.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -124,6 +125,7 @@
   <ItemGroup>
     <ClInclude Include="MainDlg.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="SEdit2.h" />
     <ClInclude Include="SMyCtrl.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="trayicon\SShellNofityHwnd2.h" />

@@ -24,10 +24,12 @@ protected:
 	void OnLButtonDown(UINT nFlags, CPoint point);
 
 	SOUI_MSG_MAP_BEGIN()
+
 		MSG_WM_CHAR(OnChar)
 		MSG_WM_KEYDOWN(OnKeyDown)
 		MSG_WM_PAINT_EX(OnPaint)
 		MSG_WM_LBUTTONDOWN(OnLButtonDown)
+
 	SOUI_MSG_MAP_END()
 
 private:

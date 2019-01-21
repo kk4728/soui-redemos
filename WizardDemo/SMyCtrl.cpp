@@ -71,4 +71,6 @@ void SMyCtrl::OnLButtonDown(UINT nFlags, CPoint point)
 	Invalidate();
 }
 
+
+
 }

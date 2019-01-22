@@ -1,6 +1,7 @@
-﻿<SOUI name="mainWindow" title="@string/title" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16" width="600" height="450"  margin="5,5,5,5"  resizable="1" wndType="appMain"
-toolWindow="1"
-translucent="1" 
+﻿<SOUI name="mainWindow" title="@string/title" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16" 
+      width="600" height="450"  margin="5,5,5,5"  resizable="1" wndType="appMain"
+      toolWindow="1"
+      translucent="1" 
 >
   <root skin="_skin.sys.wnd.bkgnd" cache="1">
     <caption pos="0,0,-0,30" show="1" font="adding:0">
@@ -50,6 +51,6 @@ translucent="1"
     
     
     
-<shellnotifyicon id="110" menu="SMENU:menu_tray" ico="ICON_LOGO:16" tip="110"/>
+  <shellnotifyicon id="110" menu="SMENU:menu_tray" ico="ICON_LOGO:16" tip="110"/>
   </root>
 </SOUI>
